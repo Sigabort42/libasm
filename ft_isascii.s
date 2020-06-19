@@ -6,15 +6,13 @@ section .text
 _ft_isascii:
 	push rbp
 	mov rbp, rsp
+	mov rax, 0
 	cmp rdi, 0
 	jl quit
 	cmp rdi, 127
 	jg quit
-	mov rax, 0
-	leave
-	ret
+	mov rax, 1
 
 quit:
-	mov rax, 1
 	leave
 	ret	

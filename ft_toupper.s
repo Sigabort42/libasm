@@ -10,7 +10,7 @@ _ft_toupper:
 	jl quit
 	cmp rdi, 122
 	jg quit
-	lea rax, rdi - 32
+	lea rax, [rdi - 32]
 	leave
 	ret
 

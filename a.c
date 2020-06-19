@@ -7,6 +7,7 @@ extern int ft_isalnum(int);
 //extern int ft_toupper(int);
 extern int ft_tolower(int);
 //extern int ft_tolower(int);
+extern int ft_isascii(int);
 
 #define WORD "Salut"
 
@@ -16,8 +17,8 @@ int main()
   
   //strcpy(str, WORD);
   //printf("lol=>%s\n", str);
-  //ft_bzero(str, 3);//strlen(str));
-  printf("lil =>%d\n", ft_isalnum(120));
+  //ft_bzero(-1, strlen(str));
+  printf("lil =>%d\n", ft_isascii(-1));
   //ft_puts("Salut toi comment tu va?"));
   //printf("lol=>%s|%s|\n", str, str + 3);
   return (0);

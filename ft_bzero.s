@@ -8,8 +8,7 @@ _ft_bzero:
 	mov rbp, rsp
 	xor rbx, rbx
 	cmp rdi, 0
-	jle quit
-	jmp looping
+	je quit
 
 looping:
 	cmp rsi, rbx

@@ -7,21 +7,20 @@ _ft_isalpha:
 	push rbp
 	mov rbp, rsp
 	cmp rdi, 65
-	js quit
+	jl quit
 	cmp rdi, 90
-	js ok
+	jle ok
 	cmp rdi, 97
-	js quit
+	jl quit
 	cmp rdi, 122
-	js ok
-	jg quit
-
-quit:
-	mov rax, 1
-	leave
-	ret
+	jle ok
 
 ok:
 	mov rax, 0
 	leave
 	ret
+quit:
+	mov rax, 1
+	leave
+	ret
+

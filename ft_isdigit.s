@@ -6,15 +6,13 @@ section .text
 _ft_isdigit:
 	push rbp
 	mov rbp, rsp
+	mov rax, 0
 	cmp rdi, 48
 	jl quit
 	cmp rdi, 57
-	jg quit
-	mov rax, 0
-	leave
-	ret
+	jge quit
+	mov rax, 1
 
 quit:
-	mov rax, 1
 	leave
 	ret	

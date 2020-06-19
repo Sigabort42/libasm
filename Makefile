@@ -1,8 +1,8 @@
 NAME		=	libfts.a
 
-CC		=	nasm
+AS		=	nasm
 
-FLAGS		=	-f macho64
+ASFLAGS		=	-f macho64
 
 SRCS		=	ft_bzero.s \
 			ft_isalpha.s \
@@ -12,9 +12,9 @@ SRCS		=	ft_bzero.s \
 			ft_isdigit.s \
 			ft_toupper.s \
 			ft_tolower.s \
-			ft_puts \
+			ft_puts.s \
 
-OBJS		=	$(SRCS:.c=.o)
+OBJS		=	$(SRCS:.s=.o)
 
 
 all: $(NAME)
@@ -24,11 +24,11 @@ $(NAME): $(OBJS)
 	@echo "\033[H\033[2J\033[32mLibfts [\033[32;5mOk\033[0m\033[32m]"
 
 clean:
-	@/bin/rm -i $(OBJS)
+	@/bin/rm $(OBJS)
 	@echo "\033[32mLibfts.o [\033[32;5mCleaned\033[0m\033[32m]"
 
 fclean: clean
-	@rm -rf -i $(NAME)
+	@rm -rf $(NAME)
 	@echo "\033[32mLibfts [\033[32;5mCleaned\033[0m\033[32m]"
 
 re: fclean all

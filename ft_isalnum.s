@@ -6,27 +6,23 @@ section .text
 _ft_isalnum:
 	push rbp
 	mov rbp, rsp
-
+	mov rax, 1
 	cmp rdi, 48
-	js quit
+	jl quit
 	cmp rdi, 57
-	js ok
+	jle ok
 	cmp rdi, 65
-	js quit
+	jl quit
 	cmp rdi, 90
-	js ok
+	jle ok
 	cmp rdi, 97
-	js quit
+	jl quit
 	cmp rdi, 122
-	js ok
-	jg quit
+	jle ok
 
 quit:
-	mov rax, 1
-	leave
-	ret
-
-ok:
 	mov rax, 0
+
+ok:	
 	leave
 	ret
