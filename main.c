@@ -13,12 +13,12 @@ int main()
   strcpy(str, WORD);
   strcpy(str2, WORD);
   str2 = ft_strcat(str2, "OUlou");
-  //printf("ft_strcat=>%s\n", str2);
-  //printf("ft_bzero=>%s\n", str);
-  //ft_bzero(0, strlen(str));
+  printf("ft_strcat=>%s\n", str2);
+  printf("ft_bzero=>%s\n", str);
+  ft_bzero(0, strlen(str));
+  printf("ft_bzero=>%s|%s|\n", str, str + 3);
   printf("ft_strlen('Salut')=>%zu\n", ft_strlen("Salut"));
-  //printf("ft_bzero=>%s|%s|\n", str, str + 3);
-  //printf("isascii =>%d\n", ft_isascii(-1));
-  //ft_puts("Salut toi comment tu va?");
+  printf("isascii =>%d\n", ft_isascii(-1));
+  ft_puts("Salut toi comment tu va?");
   return (0);
 }

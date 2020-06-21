@@ -20,8 +20,8 @@ count_i:
 looping:
 	cmp byte[rsi], 0
 	je quit
-	mov cl, [rsi]
-	mov byte[rdi], cl
+	mov bl, [rsi]
+	mov byte[rdi], bl
 	inc rsi
 	inc rdi
 	jmp looping
