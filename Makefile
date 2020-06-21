@@ -22,6 +22,8 @@ SRCS		=	ft_bzero.s \
 			ft_tolower.s \
 			ft_puts.s \
 			ft_strcat.s \
+			ft_strlen.s \
+
 
 HEADERS		=	libfts.h
 

@@ -1,6 +1,7 @@
 #ifndef LIBFTS_H
 # define LIBFTS_H
 
+size_t	ft_strlen(const char *);
 void	ft_bzero(void*, size_t);
 char	*ft_strcat(char *, const char *);
 int	ft_isalpha(int);
