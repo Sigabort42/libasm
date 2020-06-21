@@ -3,7 +3,10 @@
 
 size_t	ft_strlen(const char *);
 void	ft_bzero(void*, size_t);
+void	*ft_memset(void *, int, size_t);
+void	*ft_memcpy(void *, const void *, size_t);
 char	*ft_strcat(char *, const char *);
+char	*ft_strdup(const char *);
 int	ft_isalpha(int);
 int	ft_isalnum(int);
 int	ft_isascii(int);

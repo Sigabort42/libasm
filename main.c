@@ -20,5 +20,10 @@ int main()
   printf("ft_strlen('Salut')=>%zu\n", ft_strlen("Salut"));
   printf("isascii =>%d\n", ft_isascii(-1));
   ft_puts("Salut toi comment tu va?");
+  str = ft_memset(str, 48, 4);
+  printf("ft_memset(str, 48, 3)=>%s\n", str);
+  str = ft_memcpy(str, WORD, 3);
+  printf("ft_memcpy(str, 'salut', 3)=>%s\n", str);
+  printf("ft_strdup('Ouloulou')=>%s\n", ft_strdup("Ouloulou"));
   return (0);
 }
