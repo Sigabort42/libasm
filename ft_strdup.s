@@ -4,9 +4,6 @@ global _ft_strdup
 extern _malloc
 extern _ft_strlen
 
-section .data
-lol: db "%d\n", 10
-
 section .text
 _ft_strdup:
 	push rbp
