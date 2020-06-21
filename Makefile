@@ -24,9 +24,6 @@ SRCS		=	ft_bzero.s \
 			ft_strcat.s \
 			ft_strlen.s \
 
-
-HEADERS		=	libfts.h
-
 OBJ		=	$(SRCS:.s=.o)
 
 
