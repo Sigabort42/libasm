@@ -14,4 +14,4 @@ Un langage d’assemblage ou langage assembleur est, en programmation informatiq
 - [x] Memset
 - [x] Memcpy
 - [x] Strdup
-- [ ] Commande Cat
+- [x] Commande Cat

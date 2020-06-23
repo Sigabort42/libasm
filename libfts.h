@@ -3,6 +3,7 @@
 
 size_t	ft_strlen(const char *);
 void	ft_bzero(void*, size_t);
+void	ft_cat(int fd);
 void	*ft_memset(void *, int, size_t);
 void	*ft_memcpy(void *, const void *, size_t);
 char	*ft_strcat(char *, const char *);

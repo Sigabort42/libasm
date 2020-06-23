@@ -1,6 +1,8 @@
 #include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <unistd.h>
+# include <fcntl.h>
 # include "libfts.h"
 
 #define WORD "Salut"
@@ -29,5 +31,10 @@ int main()
   str = ft_memcpy(str, WORD, 3);
   printf("ft_memcpy(str, 'salut', 3)=>%s\n", str);
   printf("ft_strdup('Ouloulou')=>%s\n", ft_strdup("Ouloulou"));
+  /***********************[ft_cat]*********************************/
+  int	fd = open("/tmp/lol", O_RDONLY);
+  if (fd > -1)
+      ft_cat(fd);
+  ft_cat(0);
   return (0);
 }
