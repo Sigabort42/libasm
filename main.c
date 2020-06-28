@@ -32,9 +32,9 @@ int main()
   printf("ft_memcpy(str, 'salut', 3)=>%s\n", str);
   printf("ft_strdup('Ouloulou')=>%s\n", ft_strdup("Ouloulou"));
   /***********************[ft_cat]*********************************/
-  int	fd = open("/tmp/lol", O_RDONLY);
+  int	fd = open("./Makefile", O_RDONLY);
   if (fd > -1)
-      ft_cat(fd);
+    ft_cat(fd);
   ft_cat(0);
   return (0);
 }
